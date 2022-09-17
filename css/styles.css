@@ -15,6 +15,7 @@
     --border: #eeeeee;
     --border-bottom: #ececec;
     --borders: #afb1b8;
+    --background:  rgba(255, 255, 255, .1);
 }
 
 body {
@@ -251,7 +252,8 @@ margin-right: 0;
     border-radius: 4px;
 }
 
-.card-icon {
+.icon {
+    display: block;
     margin: auto;
 }
   
@@ -459,3 +461,42 @@ list-style: none;
 margin-top: 9px;
 } 
 
+.footer-social .list {
+list-style: none;
+}
+
+.footer-social {
+    margin-left: 70px;
+}
+
+.footer-social .title {
+    margin-bottom: 20px;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-social .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--background);
+}
+
+.footer-social .item + .item {
+    margin-left: 10px;
+}
+
+.container.flex {
+    display: flex;
+}
+
+/* .foote-social .icon {
+padding: 44px;
+} */
