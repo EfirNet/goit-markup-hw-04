@@ -246,7 +246,7 @@ margin-right: 0;
 }
 
 .item .way-card {
-display: flex;
+display: inline-flex;
 width: 270px;
 height: 120px;
 margin-bottom: 30px;
