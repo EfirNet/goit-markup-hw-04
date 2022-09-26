@@ -138,6 +138,7 @@ align-items: center;
 display: flex;
 padding: 24px 0;
 color: var(--prmary-text-color);
+fill: currentColor;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -149,7 +150,7 @@ text-decoration: none;
 .top-contacts .link:hover,
 .top-contacts .link:focus {
 color: var(--accent-color);
-fill: var(--accent-color);
+fill: currentColor;
 }
 
 .top-contacts .list {
@@ -163,9 +164,7 @@ margin-left: 50px;
 
 .top-contacts .icon {
     margin-right: 10px;
-    fill: currentColor;
 }
-
 
 /* Контейнер Герой */
 .hero {
