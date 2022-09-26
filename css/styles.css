@@ -68,11 +68,14 @@ padding-bottom: 0;
 
 .top {
     display: flex;
-    width: 1200px;
-    border-bottom: 1px solid var(--border-bottom);
-    align-items: center;
-    justify-content: space-between;
+    width: 1170px;
     margin: 0 auto;
+}
+
+.header {
+    max-width: 1600px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border-bottom);
 }
 
 /* logo */
@@ -133,8 +136,11 @@ color: var(--accent-color);
 
 /* Контакти link */
 
+.top-contacts {
+margin: auto 0 auto auto;
+}
+
 .top-contacts .link {
-align-items: center;
 display: flex;
 padding: 24px 0;
 color: var(--prmary-text-color);
@@ -144,7 +150,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
-
 }
 
 .top-contacts .link:hover,
@@ -163,7 +168,7 @@ margin-left: 50px;
 }
 
 .top-contacts .icon {
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }
 
 /* Контейнер Герой */
@@ -419,6 +424,7 @@ justify-content: center;
 
 .port-img .content-item {
 padding: 20px 24px;
+
 }
 
 .title-port {
@@ -440,14 +446,18 @@ flex-wrap: wrap;
 display: flex;
 }
 
-.port-img .item {
-width: 370px;
+.content-item {
 border-bottom: 1px solid var(--border);
 border-left: 1px solid var(--border);
 border-right: 1px solid var(--border);
+}
+
+.port-img .item {
+width: 370px;
 background: var(--white-color);
 margin-right: 30px;
 margin-bottom: 30px;
+font-size: 0;
 }
 
 .port-img .item:hover,
@@ -532,18 +542,16 @@ list-style: none;
     text-transform: uppercase;
 }
 
-.footer-social .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-social .link {
+    display: inline-flex;
     border-radius: 50%;
     width: 44px;
     height: 44px;
     background-color: var(--background);
 }
 
-.footer-social .item:hover,
-.footer-social .item:focus {
+.footer-social .link:hover,
+.footer-social .link:focus {
     background-color: var(--accent-color);
 }
 
@@ -553,10 +561,6 @@ list-style: none;
 
 .footer .container {
     display: flex;
-}
-
-.footer-social .link {
-    padding: 14px;
 }
 
 .footer-social .icon {
