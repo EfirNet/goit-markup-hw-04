@@ -21,6 +21,8 @@
     --background:  rgba(255, 255, 255, .1);
 
     --gradient: rgba(47, 48, 58, 0.4);
+
+    --shadow: rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -168,7 +170,7 @@ margin-left: 50px;
 }
 
 .top-contacts .icon {
-    margin: 0 10px 0 0;
+    margin: auto 10px auto auto;
 }
 
 /* Контейнер Герой */
@@ -204,6 +206,7 @@ text-transform: uppercase;
 display: block;
 border: 0;
 padding: 10px 32px;
+margin: 30px auto 0 auto;
 background-color: var(--accent-color);
 color: var(--white-color);
 font-family: Roboto, Verdana, sans-serif;
@@ -211,7 +214,8 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.06em;
-margin: 30px auto 0 auto;
+box-shadow: 0px 4px 4px var(--shadow);
+border-radius: 4px;
 cursor: pointer;
 }
 
